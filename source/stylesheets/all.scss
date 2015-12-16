@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+$mobile-width: 48em;
+$primary-color: #f3c859;
+$title-color: darken(#f3c859, 15%);
+$body-text-color: #454545;
+$footer-color: #888;
+
+body {
+  background: #fff;
+  color: $body-text-color;
+  font-family: Lato, sans-serif;
+}
+
+
+.doc {
+  font-size: 14px;
+  margin: 0; }
+  .doc:before,
+  .doc:after {
+    opacity: .2;
+    padding: 6px;
+    font-style: normal;
+    position: relative;
+    content: "•"; }
+  .doc a {
+    color: rgba(0, 0, 0, 0.3); }
+    .doc a:hover {
+      color: #666; }
+
+.page-header {
+  background-color: $primary-color;
+  text-align: center;
+  padding-bottom: 30px;
+
+  > .title {
+    background: url("../images/hourglass.png") no-repeat center 80px;
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 210px 0 10px;
+  }
+
+  > .tagline {
+    color: rgba(255, 255, 255, .7);
+    font-size: 24px;
+  }
+
+  .add-to-slack-button {
+    max-width: 16em;
+  }
+}
+
+.page-content {
+  margin: 0 auto;
+  max-width: 60em;
+  padding: 5em 2em;
+}
+
+.page-footer {
+  background-color: $footer-color;
+  padding: 3em;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+
+  > .item {
+    flex-grow: 1;
+    flex-basis: 100%;
+    max-width: 100%;
+
+    @media only screen and (min-width: $mobile-width) {
+      flex-basis: 45%;
+      max-width: 45%;
+    }
+  }
+}
+
+.image-responsive {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.description-paragraph {
+  > .title {
+    color: $title-color;
+  }
+}
+
+.copyright-notice {
+  text-align: center;
+  font-weight: bold;
+}

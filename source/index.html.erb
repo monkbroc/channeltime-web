@@ -1,31 +1,33 @@
 ---
-title: Slack Time
+title: Time to Slack
 ---
 
 <section class="page-header">
-  <h1 class="title">Slack Time</h1>
+  <%= image_tag "hourglass.png", class: "logo" %>
+  <h1 class="title">Time to Slack</h1>
   <p class="tagline">Automatic time zone conversions for your team</p>
   <%= partial "add_to_slack" %>
 </section>
 
 <section class="page-content">
-  <div class="content-row">
-    <div class="item">
-      <%= image_tag "screenshot.png", class: "image-responsive" %>
-    </div>
-
+  <div class="content-row -reverse">
     <div class="item description-paragraph">
       <h1 class="title">Detects time zones</h1>
       <p class="body">
-        Don't ask if that the time is in your time zone or your team
-        mate's time zone. Slack Time automatically parses the phrase and
-        converts the times for everybody in the room.
+        Don't ask if that the time is in your time zone or your
+        teammate's time zone. Slack Time automatically parses the phrase
+        and converts the times for everybody in the room.
       </p>
     </div>
+
+    <div class="item">
+      <%= image_tag "screenshot.png", class: "image-responsive" %>
+    </div>
+  </div>
 </section>
 
 <footer class="page-footer">
   <div class="copyright-notice">
-    © <%= Date.today.year %> Julien Vanier
+    © <%= Date.today.year %> Julien Vanier LLC
   </div>
 </footer>

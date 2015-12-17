@@ -2,7 +2,7 @@
 
 $mobile-width: 48em;
 $primary-color: #f3c859;
-$title-color: darken(#f3c859, 15%);
+$title-color: darken($primary-color, 15%);
 $body-text-color: #454545;
 $footer-color: #888;
 
@@ -12,35 +12,24 @@ body {
   font-family: Lato, sans-serif;
 }
 
-
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
-
 .page-header {
   background-color: $primary-color;
   text-align: center;
   padding-bottom: 30px;
 
+  > .logo {
+    margin: 80px 0 20px 0;
+    padding: 20px 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+  }
+
   > .title {
-    background: url("../images/hourglass.png") no-repeat center 80px;
     color: white;
     font-size: 64px;
     font-weight: bold;
     letter-spacing: -1px;
     margin: 0;
-    padding: 210px 0 10px;
   }
 
   > .tagline {
@@ -66,7 +55,12 @@ body {
 
 .content-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  &.-reverse {
+    flex-direction: row-reverse;
+  }
 
   > .item {
     flex-grow: 1;

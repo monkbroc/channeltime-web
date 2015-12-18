@@ -12,16 +12,20 @@ title: Time to Slack
 <section class="page-content">
   <div class="content-row -reverse">
     <div class="item description-paragraph">
-      <h1 class="title">Detects time zones</h1>
+      <h1 class="title">Use <code>/time</code> to convert times</h1>
       <p class="body">
         Don't ask if that the time is in your time zone or your
-        teammate's time zone. Slack Time automatically parses the phrase
-        and converts the times for everybody in the room.
+        teammate's time zone.
+      </p>
+      <p class="body">
+        Start a message with <code>/time</code> and Time to Slack will
+        automatically parses the phrase to
+        converts the times for everybody in the room.
       </p>
     </div>
 
     <div class="item">
-      <%= image_tag "screenshot.png", class: "image-responsive" %>
+      <%= image_tag "screenshot.gif", class: "image-responsive" %>
     </div>
   </div>
 
@@ -31,13 +35,20 @@ title: Time to Slack
       <p class="body">
         Here are the permissions that <strong>Time to Slack</strong> needs and why:
         <ul>
-          <li>Confirm user's identity: Default permission for Slack apps</li>
+          <li>Confirm your identity: get the Slack ID for the user adding this app</li>
           <li>Add commands: to add the <code>/time</code> command</li>
-          <li>Access the team's profile information: to find each team member's time zone</li>
-          <li>Access information about user's public channels: to be able to match channel members with their time zone</li>
-          <li>Send messages as user: to post the modified message with time zone information</li>
+          <li>Access information about your public channels: to be able to match channel members with their time zone</li>
+          <li>Send messages as Time to Slack: to post the modified message with time zone information</li>
+          <li>Access your team's profile information: to find each team member's time zone</li>
         </ul>
       </p>
     </div>
+
+    <div class="item">
+      <%= image_tag "permissions.png", class: "image-responsive" %>
+    </div>
   </div>
+  <h2 class="maker-signature">
+    Made with ❤️ by <a href="julien@timetoslack.com" class="link-undecorated">Julien Vanier</a>, a slacker just like you.
+  </h2>
 </section>

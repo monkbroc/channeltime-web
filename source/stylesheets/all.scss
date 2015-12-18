@@ -5,6 +5,7 @@ $primary-color: #f3c859;
 $title-color: darken($primary-color, 15%);
 $body-text-color: #454545;
 $footer-color: #888;
+$heart-red: #eb4d5c;
 
 body {
   background: #fff;
@@ -75,6 +76,10 @@ body {
     justify-content: center;
   }
 
+  + .content-row {
+    margin-top: 80px;
+  }
+
   > .item {
     flex-grow: 1;
     flex-basis: 100%;
@@ -105,6 +110,10 @@ body {
 .description-paragraph {
   > .title {
     color: $title-color;
+  }
+
+  > .body {
+    font-size: 1.3em;
   }
 }
 
@@ -149,3 +158,8 @@ body {
   font-size: 18px;
 }
 
+.maker-signature {
+  color: $heart-red;
+  padding: 40px 0;
+  text-align: center;
+}

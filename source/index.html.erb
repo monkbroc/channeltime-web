@@ -31,6 +31,22 @@ title: Time to Slack
 
   <div class="content-row">
     <div class="item description-paragraph">
+      <h1 class="title">Open source</h1>
+      <p class="body">
+        If you'd rather host this yourself or you just want to peek under the hook, go ahead and check out
+        <%= link_to "the source code for Time to Slack", data.project.github_url %>.
+      </p>
+    </div>
+
+    <div class="item">
+      <a href="<%= data.project.github_url %>">
+        <%= image_tag "github.jpg", class: "image-responsive" %>
+      </a>
+    </div>
+  </div>
+
+  <div class="content-row -reverse">
+    <div class="item description-paragraph">
       <h1 class="title">Permissions</h1>
       <p class="body">
         Here are the permissions that <strong>Time to Slack</strong> needs and why:

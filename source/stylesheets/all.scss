@@ -28,9 +28,6 @@ body {
 
   > .logo {
     margin: 80px 0 20px 0;
-    padding: 20px 25px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 6px;
   }
 
   > .title {
@@ -162,4 +159,9 @@ body {
   color: $heart-red;
   padding: 40px 0;
   text-align: center;
+}
+
+.affiliation-notice {
+  text-align: center;
+  color: #888;
 }

@@ -1,10 +1,6 @@
----
-title: Time to Slack
----
-
 <section class="page-header">
   <%= image_tag "hourglass.png", class: "logo" %>
-  <h1 class="title">Time to Slack</h1>
+  <h1 class="title"><%= data.project.name %></h1>
   <p class="tagline">Automatic time zone conversions for your team</p>
   <%= partial "add_to_slack" %>
 </section>
@@ -18,7 +14,7 @@ title: Time to Slack
         teammate's time zone.
       </p>
       <p class="body">
-        Start a message with <code>/time</code> and Time to Slack will
+        Start a message with <code>/time</code> and <%= data.project.name %> will
         automatically parse your message to
         convert the time for everybody in the room.
       </p>
@@ -34,7 +30,7 @@ title: Time to Slack
       <h1 class="title">Open source</h1>
       <p class="body">
         If you'd rather host this yourself or you just want to peek under the hook, go ahead and check out
-        <%= link_to "the source code for Time to Slack", data.project.github_url %>.
+        <%= link_to "the source code for #{data.project.name}", data.project.github_url %>.
       </p>
     </div>
 
@@ -49,12 +45,12 @@ title: Time to Slack
     <div class="item description-paragraph">
       <h1 class="title">Permissions</h1>
       <p class="body">
-        Here are the permissions that <strong>Time to Slack</strong> needs and why:
+        Here are the permissions that <strong><%= data.project.name %></strong> needs and why:
         <ul>
           <li>Confirm your identity: get the Slack ID for the user adding this app</li>
           <li>Add commands: to add the <code>/time</code> command</li>
           <li>Access information about your public channels: to be able to match channel members with their time zone</li>
-          <li>Send messages as Time to Slack: to post the modified message with time zone information</li>
+          <li>Send messages as <%= data.project.name %>: to post the modified message with time zone information</li>
           <li>Access your team's profile information: to find each team member's time zone</li>
         </ul>
       </p>
@@ -65,7 +61,7 @@ title: Time to Slack
     </div>
   </div>
   <h2 class="support-line">
-    Questions? Concerns? Issues? Write to <a href="mailto:support@timetoslack.com">support@timetoslack.com</a>
+    Questions? Concerns? Issues? Write to <a href="mailto:support@<%= data.project.webhost %>">support@<%= data.project.webhost %></a>
   </h2>
   <h2 class="maker-signature">
     Made with ❤️ by <a href="http://www.julienvanier.com/" class="link-undecorated">Julien Vanier</a>, a slacker just like you.

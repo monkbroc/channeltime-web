@@ -1,4 +1,4 @@
-<section class="page-header">
+<section class="page-header -jumbo">
   <%= image_tag "hourglass.png", class: "logo" %>
   <h1 class="title"><%= data.project.name %></h1>
   <p class="tagline">Automatic time zone conversions for your team</p>
@@ -61,7 +61,7 @@
     </div>
   </div>
   <h2 class="support-line">
-    Questions? Concerns? Issues? Write to <a href="mailto:support@<%= data.project.webhost %>">support@<%= data.project.webhost %></a> or <a href="https://twitter.com/<%= data.project.twitter_handle %>">@<%= data.project.twitter_handle %></a>
+    Questions? Concerns? Issues? Tweet to <a href="https://twitter.com/<%= data.project.twitter_handle %>">@<%= data.project.twitter_handle %></a> or <%= link_to "visit the support page", "support" %>
   </h2>
   <h2 class="maker-signature">
     Made with ❤️ by <a href="http://www.julienvanier.com/" class="link-undecorated">Julien Vanier</a>, a slacker just like you.

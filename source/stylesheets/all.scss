@@ -25,6 +25,31 @@ body {
 .page-header {
   background-color: $primary-color;
   text-align: center;
+}
+
+.page-header.-small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  > .title {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin: 0;
+  }
+
+  > .tagline {
+    color: rgba(255, 255, 255, .7);
+    font-size: 20px;
+  }
+
+  .add-to-slack-button {
+    max-width: 16em;
+  }
+}
+
+.page-header.-jumbo {
   padding-bottom: 30px;
 
   > .logo {
@@ -187,5 +212,34 @@ body {
     border: 1px solid #bbb;
     border-radius: 8px;
     max-width: 230px;
+  }
+}
+
+.jotform-form {
+  .form-label-top {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 9px;
+    margin-top: 20px;
+  }
+
+  .form-textbox {
+    padding: 3px;
+    margin-left: 0;
+    font-size: 1em;
+    line-height: 1.3em;
+  }
+
+  .form-buttons-wrapper {
+    margin-top: 20px;
+  }
+
+  .form-submit-button {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    color: #666;
+    cursor: pointer;
+    border-radius: 3px 3px;
+    background: #f5f5f5;
   }
 }
